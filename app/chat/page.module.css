@@ -1,0 +1,27 @@
+.container {
+    padding: 2rem;
+}
+
+.paragraph {
+    word-wrap: break-word;
+}
+
+.spansegment {
+    display: inline-block;
+    word-wrap: break-word;
+    padding: 0.4rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.spansegmentAvailable {
+    background-color: #DDD;
+}
+
+.spansegment:hover {
+    background-color: rgb(31, 71, 233);
+    color: white;
+    transform: scale(1.1);
+}
