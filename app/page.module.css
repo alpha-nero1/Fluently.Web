@@ -6,12 +6,11 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
@@ -30,8 +29,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  flex: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .main ol {
@@ -56,31 +56,6 @@
   font-weight: 600;
 }
 
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
 a.primary {
   background: var(--foreground);
   color: var(--background);
@@ -96,6 +71,7 @@ a.secondary {
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  height: 8rem;
 }
 
 .footer a {
@@ -106,6 +82,20 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
+}
+
+.header {
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Enable hover only on non-touch devices */

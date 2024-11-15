@@ -1,18 +1,22 @@
 .container {
-    padding: 2rem;
     display: flex; 
     overflow: hidden;
     height: 100%;
+    width: 100%;
 }
 
 .leftContent {
     flex: 1;
+    min-height: 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .rightContent {
     border-radius: 0.4rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
     border: 1px solid #DDD;
-    padding: 2rem;
     width: 0; /* Start with width 0 (hidden) */
     overflow: hidden; /* Hide any content that's outside the container */
     opacity: 0; /* Start with the content hidden */
@@ -22,6 +26,7 @@
 .rightContent.show {
     width: 30rem; /* Full width when shown */
     opacity: 1; /* Fully visible when shown */
+    padding: 2rem;
 }
 
 .explanation {
